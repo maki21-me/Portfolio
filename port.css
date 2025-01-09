@@ -1,0 +1,190 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#03203d ;
+}
+
+header h1 {
+   /* background-color: #333;*/
+    color: #cebbb7;
+    padding:  0px;
+ text-align: left;
+ margin:0px;
+ font-family: san-serif;
+ position: fixed;
+}
+
+header {
+margin: 0px;
+text-align: end;
+padding: 0px;
+color: white;
+
+}
+.content {
+    display: inline;
+padding: 10px;
+font-size: 20px;
+font-family: san-serif;
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 0;
+z-index: 1000;
+justify-content: end;
+}
+.content a {
+    color: rgb(253, 195, 145);
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add spacing between links */
+    font-size: 22px; /* Font size for links */
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  
+header a:hover{
+    color: rgb(157, 172, 135);
+    transform: translateY(10px);
+    text-decoration: underline;
+}
+
+.description h2{
+    text-align:start;
+    font-size: 34px;
+    font-family: san-serif;
+    margin-top: 60px;
+    padding: 60px;
+
+}
+
+img{
+    width:200px;
+    padding: 40px;
+    margin-top: 0px;
+}
+.container {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Adds space between profile and description */
+    padding: 20px; /* Adds padding around the container */
+    max-width: 800px; /* Sets a maximum width for the container */
+    margin: auto; ;
+}
+
+.profile-image {
+    flex: 1; /* Allows profile to take available space */
+    text-align: center; /* Space between image and description */
+}
+.profile-image img {
+    width: 250px; /* Sets a specific width for the profile photo */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%*/
+}
+
+.description {
+    flex: 2; /* Allows description to take more space than profile */
+    padding-left: 20px; /* Adds space between profile and description */
+    color: #e7f2f7;
+}
+.description ul{
+
+list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+  .contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#03203d ;
+    color: white;
+    margin-top: 100px;
+    position: bottom;
+}
+    
+
+  .contact h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spacing between icons */
+    margin-top: 20px;
+    color: #90b9e2;
+  }
+  .social-icons a{
+    color: antiquewhite;
+  }
+  .social-icons a:hover{
+    color: white;
+  }
+
+footer {
+    /* background-color: #333;*/
+     color: white;
+     text-align:center;
+     font-size: 17px;
+    margin-top: 250px;
+ background-color: rgb(80, 68, 59);
+ padding: 10px;
+ font-family: san-serif;
+    
+ }
+/*
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.project-card {
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #555;
+}*/
+
+  
+
+/*
+img#imagePreview {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

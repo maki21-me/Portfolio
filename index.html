@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="content">
+        <a href="about.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+      </nav>
+      </header>
+  <section id="about" class="about-section">
+    <div class="container">
+     
+      <div class="about-content">
+        <div class="image">
+          <img src="image copy 5.png" alt="Profile Picture">
+        </div>
+        <div class="text">
+          <h1>About Me</h1>
+        <ul type="none">
+          <li>Hi, I'm a passionate and driven <strong> Software Engineering </strong>student, currently studying at university since 2023. From the moment I began learning software engineering course both through formal education and self-stud I discovered a deep love for the field. I find it incredibly fascinating and rewarding to solve problems through technology, and I believe that software engineering holds the <strong>key</strong> to addressing many challenges in our lives. I'm excited about the journey ahead, constantly pushing myself to grow as a coder and develop creative solutions. I aspire to become not just a skilled programmer but also a problem solver who makes a positive impact on society. Beyond coding, I enjoy exploring new technologies, building projects, and continuously learning to sharpen my skills. My goal is to evolve into a confident and smart developer, contributing to meaningful innovations and inspiring others along the way.</li>
+        </ul>
+      </div>
+     
+      </div>
+    </div>
+    <h2>Skills</h2>
+    <section class="widgets">
+
+      <div class="widget">
+        <h3>Web development</h3>
+        <ul type="none">
+          <li class="first-li">HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Communication</h3>
+        <p>Clear, concise, confident and effective communicator.</p>
+      </div>
+      <div class="widget">
+        <h3>Problem Solving</h3>
+        <p>Creative, analytical, and efficient problem solver.</p>
+      </div>
+    </section>
+    <section class="charts">
+      <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+      </div>
+     
+<!-- Skills Section -->
+<div class="skills">
+  <h3>Progress</h3>
+  <div class="skill-item">
+      <span>JavaScript</span>
+      <div class="progress-bar">
+          <div class="progress" style="width: 80%;">80%</div>
+      </div>
+  </div>
+</div>
+
+<!-- Fun Fact Generator -->
+<div class="fun-fact">
+  <h3>Fun Fact About Me</h3>
+  <button onclick="showFunFact()">Click for Fun Fact</button>
+  <p id="fact-display"></p>
+</div>
+
+<!-- My Coding Journey (Timeline) -->
+<div class="timeline">
+  <h3>My Coding Journey</h3>
+  <ul>
+      <li><strong>2024 - Started Software Engineering</strong></li>
+      <li><strong>2025 - Built My First Web App</strong></li>
+      <li><strong>2026 - Learned JavaScript and React</strong></li>
+  </ul>
+</div>
+
+<!-- Projects Counter -->
+<div class="counter">
+  <h3>Projects Completed</h3>
+  <p><span id="project-count">0</span>+</p>
+</div>
+    </section>
+  </section>
+  <script src="index.js"></script>
+  </body>
+  </html>

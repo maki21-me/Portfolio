@@ -1,0 +1,151 @@
+body{
+  margin: 0px;
+  background-color: #26140679;
+}
+
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #93aeb7be;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding: 0px;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: white;
+}
+.text {
+  flex: 1;
+  text-align: left;
+ 
+}
+
+header {
+  margin: 0px;
+  text-align: end;
+  padding: 0px;
+  color: white;
+  
+  }
+
+.content {
+  display: inline;
+padding: px;
+font-size: 18px;
+font-family: san-serif;
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 0;
+z-index: 1000;
+justify-content: end;
+}
+.content a {
+  color: rgb(9, 9, 9);
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Add spacing between links */
+  font-size: 20px; /* Font size for links */
+  padding: 0px;
+  margin-top: 60px;
+}
+
+
+header a:hover{
+  color: rgb(22, 10, 247);
+  transform: translateY(10px);
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 40px;
+}
+.image img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border: 8px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.animated-image {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+h2{
+  color: #e7f2f7;
+  font-family: san-serif;
+  margin-top: 150px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  
+}
+
+.widgets {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+    background-color: rgb(246, 139, 73);
+      margin-top: 40px;
+      color: black;
+}
+
+.widget {
+
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(124, 4, 4, 0.1);
+  transition: transform 0.3s;
+      background-color: rgba(220, 195, 152, 0.773);
+     
+}
+
+.widget h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(207, 236, 232);
+}
+
+.widget:hover {
+  transform: translateY(10px);
+  font-weight: bold;
+}
+

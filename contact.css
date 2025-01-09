@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(118, 180, 175);
+}
+img{
+    width:200px
+}
+.contact-form{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container h2{
+    text-align: center;
+}
+.container input{
+    text-align: center;
+}

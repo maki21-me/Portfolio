@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        </head>  
+           <style>
+fieldset{
+    width: 500px;
+    background-color: antiquewhite;
+    margin-left: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    margin:10px;
+   
+}
+input[type="submit"]:hover{
+    background-color: rgb(1, 1, 1)
+}
+input[type="reset"]{
+    background-color: rgb(49, 34, 16);
+    color: white;
+    padding:0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    width: 200px;
+    height: 20px;
+    font-size: 18px;
+}
+input checkbox{
+    height:20px;
+}
+button{
+    width: 100px;
+    height: 3dvb 0px ;
+    font-size: 20px;
+    background-color: burlywood;
+}
+input[type="radio"]{
+    padding: 10px;
+}
+
+           </style>
+           <body>
+            <form action="register.php" target="_blank" method="get"></form>
+           </body> 
+<fieldset>
+    <legend style="font-family: fantasy;">Registration Form</legend>
+    <br><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="gender">Sex</label>
+    <br>
+   
+    <label>
+    <input name="gender" value="male" type="radio">male
+    <input name="gender" value="female" type="radio">female
+    </label>
+   
+    <br><br>
+    <lable for="email">Email</lable>
+    <input type="text" id="email" name="email" required>
+    <br><br
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" required>
+    <br><br>
+    <label for="Message">Message</label>
+    <textarea name="Message" id="Message" rows="5" cols="50" minlength="20px"></textarea>
+    <br><br>
+    <label for="select">Select DPT</label>
+   <select name="select id="select">
+    <br><br>
+    <option value="html">html</option>
+    <option value="php">php</option>
+    <option value="css">css</option>
+    <option value="JavaScript">JavaScript</option>
+</select> 
+<br><br><br>
+<label for="hobby">hobby</label>
+<br><br>
+<input type="checkbox" id="sports" value="sports">
+<label for="sports"> sport</label>
+<input type="checkbox" id="music" value="music">
+<label for="music">music</label><br><br>
+<label for="file">upload your image</label>
+<input type="file" id="file" value="file" accept="image/*" >
+
+<br><br>
+    <input type="submit" name="submit">
+    <br><br>
+    <input type="reset" name="Clear">
+
+</fieldset>
+        
+</html>

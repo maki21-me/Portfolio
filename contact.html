@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <section id="about" class="section">
-        <img id="imagePreview" src="IMG_20241106_011726_311-modified.png" alt="Image Preview" >
-    </section>
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <label for="imageUpload">Upload your image:</label>
-                <input type="file" id="imageUpload" accept="image/*">
-                <button type="submit">Send</button>
-            </form>
-            <p id="responseMessage"></p>
+    <header>
+        <nav>
+            <div class="content">
+            <a href="about.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
-    </section>
+          </nav>
+          </header>
+    <div class="my-name">Meklit.</div>
+    <div class="contact-container">
+        <div class="image-section">
+            <img src="IMG_20241106_011726_311-modified.png" alt="Your Image">
+        </div>
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </body>
+    </html>

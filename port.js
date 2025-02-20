@@ -1,50 +1,26 @@
+// Array of fun facts
+const funFacts = [
+    "Did you know? The first computer programmer was Ada Lovelace.",
+    "Fun fact: The term 'bug' in programming came from a real moth!",
+    "Did you know? There are more stars in the universe than grains of sand on all the Earth's beaches.",
+    "Fun fact: The first website ever created is still online: info.cern.ch.",
+    "Did you know? Google was originally called 'Backrub'!",
+];
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    const responseMessage = document.getElementById('responseMessage');
-    const imageInput = document.getElementById('imageUpload');
-    const imagePreview = document.getElementById('imagePreview');
+// Event listener for the "Show More" button
+document.getElementById("moreInfoBtn").addEventListener("click", function() {
+    const moreInfoDiv = document.getElementById("moreInfo");
+    if (moreInfoDiv.style.display === "none") {
+        moreInfoDiv.style.display = "block"; // Show more info
+        this.textContent = "Show Less"; // Change button text
+    } else {
+        moreInfoDiv.style.display = "none"; // Hide more info
+        this.textContent = "Show More"; // Reset button text
+    }
+});
 
-    form.onsubmit = function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        if (name && email && message) {
-            responseMessage.innerText = 'Thank you for reaching out, ' + name + '!';
-            responseMessage.style.color = 'green';
-            form.reset();
-            imagePreview.src = '';
-            imagePreview.style.display = 'none';
-        } else {
-            responseMessage.innerText = 'Please fill out all fields.';
-            responseMessage.style.color = 'red';
-        }
-    };
-
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Image upload and preview functionality
-    imageInput.addEventListener('change', function() {
-        const file = this.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                imagePreview.src = e.target.result;
-                imagePreview.style.display = 'block';
-            }
-            reader.readAsDataURL(file);
-        }
-    });
+// Event listener for the "Show Fun Fact" button
+document.getElementById("funFactBtn").addEventListener("click", function() {
+    const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+    document.getElementById("funFact").textContent = randomFact; // Display random fact
 });

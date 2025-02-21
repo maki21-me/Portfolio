@@ -4,126 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <form  target="_blank" method="post"></form>
     <link rel="stylesheet" href="port.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <h1>Meklit.</h1>
-        <nav>
-            <a href="port.html">Home</a>
-            <a href="index.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <fieldset>
+  <!-- Header with Your Name -->
+<header>
     <div class="container">
-        <div class="profile-image">
-            <img src="IMG_20241106_011726_311-modified.png" alt="Profile Image">
+        <h1><span>Meklit Anteneh</span> </h1> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section remains the same -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Software Engineering Student</h2>
+                <p>Passionate about coding and building innovative solutions.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="IMG_20241106_011726_311-modified.png" alt="Profile Image">
+            </div>
         </div>
-        <div class="description">
-            <p>Hello, I'm <strong>Meklit Anteneh</strong>, a Software Engineering student at Bahir Dar University, Ethiopia. I am passionate about coding and creating innovative projects that solve real-world problems.</p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container_2">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hi, I'm <span class="highlight">Meklit Anteneh</span>, a passionate Software Engineering student at Bahir Dar University, Ethiopia. I love solving problems and building innovative solutions through code.</p>
+                <p>I specialize in <span class="highlight">front-end development</span>, with a strong foundation in HTML, CSS, and JavaScript. I enjoy turning ideas into reality and constantly strive to learn new technologies and improve my skills.</p>
+                <p>My goal is to become a <span class="highlight">full-stack developer</span> and contribute to projects that make a positive impact on society. I believe in the power of collaboration and continuous learning to achieve great things.</p>
+                <!-- Fun Facts Section -->
+                <div class="fun-facts">
+                    <h3>Fun Facts About Me</h3>
+                    <button id="showFactButton">Show a Fun Fact</button>
+                    <p id="funFactText" class="fun-fact-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Skills Section with Widgets -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-widgets">
+                <div class="skill-widget">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML</h3>
+                    <p>Proficient in creating structured and semantic web pages.</p>
+                </div>
+                <div class="skill-widget">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS</h3>
+                    <p>Skilled in styling and designing responsive websites.</p>
+                </div>
+                <div class="skill-widget">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced in building interactive and dynamic web applications.</p>
+                </div>
+                <div class="skill-widget">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Strong analytical and problem-solving skills.</p>
+                </div>
+                <div class="skill-widget">
+                    <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Communication</h3>
+                    <p>Effective communicator and team player.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Attractive Code Samples -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <p>A modern, responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+                <div class="code-sample">
+                    <div class="code-header">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                        <span class="file-name">index.html</span>
+                    </div>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="port.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Software Engineering Student&lt;/h1&gt;
+    &lt;p&gt;Passionate about coding and building innovative solutions.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>To-Do List App</h3>
+                <p>A simple to-do list application with local storage functionality.</p>
+                <div class="code-sample">
+                    <div class="code-header">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                        <span class="file-name">script.js</span>
+                    </div>
+                    <pre><code class="language-javascript">
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+    if (taskInput.value !== '') {
+        const li = document.createElement('li');
+        li.textContent = taskInput.value;
+        taskList.appendChild(li);
+        taskInput.value = '';
+    }
+}
+                    </code></pre>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="image">
-                    <img src="image copy 5.png" alt="Profile Picture">
-                </div>
-                <div class="about-content">
-                    <h1>About Me</h1>
-                    <p>
-                       From the moment I began learning software engineering through formal education and self-study, I discovered a deep love for the field. I find it incredibly fascinating and rewarding to solve problems through technology, and I believe that software engineering holds the <strong>key</strong> to addressing many challenges in our lives.
-                    </p>
-                    <br><br>
-                    <p>
-                        I'm excited about the journey ahead, constantly pushing myself to grow as a coder and develop creative solutions. I aspire to become not just a skilled programmer but also a problem solver who makes a positive impact on society. My goal is to evolve into a confident and smart developer, contributing to meaningful innovations and inspiring others along the way.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="learning" class="learning-section">
-            <h2>My Learning Journey</h2>
-            <p>As a Software Engineering student, I'm currently focused on learning:</p>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript and its frameworks</li>
-                <li>Version control with Git</li>
-            </ul>
-            <p>I'm excited to apply these skills in future projects and contribute to open-source communities.</p>
-        </section>
-
-        <section id="goals" class="goals-section">
-            <h2>My Career Goals</h2>
-            <p>I aspire to become a skilled software engineer who:</p>
-            <ul>
-                <li>Develops innovative solutions to real-world problems.</li>
-                <li>Contributes to open-source projects.</li>
-                <li>Continuously learns and adapts to new technologies.</li>
-            </ul>
-        </section>
-    
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <div class="widgets">
-                <div class="widget">
-                    <h3>Web Development</h3>
-                    <ul type="none">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="widget">
-                    <h3>Communication</h3>
-                    <p>Clear, concise, confident, and effective communicator.</p>
-                </div>
-                <div class="widget">
-                    <h3>Problem Solving</h3>
-                    <p>Creative, analytical, and efficient problem solver.</p>
-                </div>
-            </div>
-            <button id="moreInfoBtn">Show More</button>
-                <div id="moreInfo" style="display: none;">
-                    <p>I enjoy learning new technologies and working on projects that challenge me. My goal is to become a proficient software engineer and contribute to meaningful projects.</p>
-                </div>
-                <button id="funFactBtn">Fun facts about me</button>
-    <p id="funFact" style="margin-top: 10px; font-weight: bold;"></p>
-            
-       
-            </div>
-        </section>
-   
-    
-        <div class="contact-container">
-            
-            <h2>Contact Me</h2>
+    <!-- Contact Section remains the same -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me!</h2>
             <form class="contact-form">
                 <input type="text" placeholder="Name" required>
                 <input type="email" placeholder="Email" required>
                 <textarea placeholder="Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
-        </div>
-
-        <div class="contact">
-            <h1>Contact Me</h1>
-            <p>Connect with me on social media:</p>
             <div class="social-icons">
                 <a href="https://github.com/maki21-me" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="mailto:meklitanteneh58@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
                 <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://instagram.com/meklit2944" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://telegram.com/@Maki21me" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://t.me/Maki21me" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
             </div>
         </div>
-    </fieldset>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-html.min.js"></script>
+    </section>
 
+    <!-- Footer remains the same -->
     <footer>
         <p>&copy; 2025 Meklit Anteneh. All rights reserved.</p>
     </footer>

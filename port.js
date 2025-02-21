@@ -1,26 +1,19 @@
-// Array of fun facts
+// Fun Facts About You
 const funFacts = [
-    "Did you know? The first computer programmer was Ada Lovelace.",
-    "Fun fact: The term 'bug' in programming came from a real moth!",
-    "Did you know? There are more stars in the universe than grains of sand on all the Earth's beaches.",
-    "Fun fact: The first website ever created is still online: info.cern.ch.",
-    "Did you know? Google was originally called 'Backrub'!",
+    "I had no idea what coding meant until I dove into it.",
+"I love watching podcasts related to coding in my free time.",
+    "My favorite programming language is JavaScript because of its versatility.",
+    "I’m a big fan of sci-fi movies and books.",
+"I started coding because I wanted to solve societal problems.",
+    "I’m passionate about writing journals and documenting my thoughts and experiences.",
+    "I’m always curious about how things work under the hood.",
+    "I believe technology can solve some of the world’s biggest problems."
 ];
 
-// Event listener for the "Show More" button
-document.getElementById("moreInfoBtn").addEventListener("click", function() {
-    const moreInfoDiv = document.getElementById("moreInfo");
-    if (moreInfoDiv.style.display === "none") {
-        moreInfoDiv.style.display = "block"; // Show more info
-        this.textContent = "Show Less"; // Change button text
-    } else {
-        moreInfoDiv.style.display = "none"; // Hide more info
-        this.textContent = "Show More"; // Reset button text
-    }
-});
+const showFactButton = document.getElementById('showFactButton');
+const funFactText = document.getElementById('funFactText');
 
-// Event listener for the "Show Fun Fact" button
-document.getElementById("funFactBtn").addEventListener("click", function() {
-    const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
-    document.getElementById("funFact").textContent = randomFact; // Display random fact
+showFactButton.addEventListener('click', () => {
+    const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)]; // Pick a random fact
+    funFactText.textContent = randomFact; // Display the fact
 });

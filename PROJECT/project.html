@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>INSURE</title>
     <link rel="stylesheet" href="project.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>INSURE</h1>
         <nav class="nav-bar">
-                <a href="how_we_work.html">HOW WE WORK</a>
-                <a href="blog.html">BLOG</a>
-                <a href="account.html">ACCOUNT</a>
-                <a href="view_plans.html">VIEW PLANS</a>
+            <a href="#description">HOW WE WORK</a>
+            <a href="#description2">BLOG</a>
+            <a href="#footer">ACCOUNT</a>
+            <a href="#description">VIEW PLANS</a>
         </nav>
     </header>
 
     <main>
+        <!-- Humanizing Section -->
         <section id="description">
-            <section class="humanizing-section">
+            <div class="humanizing-section">
                 <div class="content">
                     <h1>Humanizing your insurance.</h1>
                     <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.</p>
-                    <a href="view_plans.html" class="view-plans-button">VIEW PLANS</a>
+                    <a href="#description" class="view-plans-button">VIEW PLANS</a>
                 </div>
                 <div class="image">
-                    <div class="curved-background"></div> <!-- Curved background element -->
+                    <div class="curved-lines">
+                        <div class="curve"></div>
+                        <div class="curve"></div>
+                        <div class="curve"></div>
+                    </div>
                     <img src="image-intro-desktop.jpg" alt="Family holding hands">
                 </div>
-            </section>
+            </div>
         </section>
 
+        <!-- We're Different Section -->
         <section id="description2">
             <h1>We're Different</h1>
             <div class="widgets">
@@ -42,7 +49,7 @@
                 </div>
                 <div class="widget">
                     <h2>Affordable Prices</h2>
-                    <p>We don't want you worrying about high monthly costs. Our prices may be low, but we still cover the best coverage possible.</p>
+                    <p>We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
                 </div>
                 <div class="widget">
                     <h2>People First</h2>
@@ -51,15 +58,17 @@
             </div>
         </section>
 
+        <!-- Banner Section -->
         <section class="banner">
             <div class="banner-content">
                 <h1>Find out more</h1>
                 <p>about how we work</p>
             </div>
-            <a href="how_we_work.html" class="banner-button">HOW WE WORK</a>
+            <a href="#description" class="banner-button">HOW WE WORK</a>
         </section>
 
-        <footer>
+        <!-- Footer Section -->
+        <footer id="footer">
             <div class="contact">
                 <h1>INSURE</h1>
                 <div class="social-icons">
@@ -78,16 +87,16 @@
             <div class="footer-links">
                 <div class="first">
                     <h4>OUR COMPANY</h4>
-                    <ul type="none">
-                        <li><a href="how_we_work.html">HOW WE WORK</a></li>
+                    <ul>
+                        <li><a href="#description">HOW WE WORK</a></li>
                         <li><a href="#">WHY INSURE?</a></li>
-                        <li><a href="view_plans.html">VIEW PLANS</a></li>
+                        <li><a href="#description">VIEW PLANS</a></li>
                         <li><a href="#">REVIEWS</a></li>
                     </ul>
                 </div>
                 <div class="second">
                     <h4>HELP ME</h4>
-                    <ul type="none">
+                    <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">TERMS OF USE</a></li>
                         <li><a href="#">PRIVACY POLICY</a></li>
@@ -96,7 +105,7 @@
                 </div>
                 <div class="third">
                     <h4>CONTACT</h4>
-                    <ul type="none">
+                    <ul>
                         <li><a href="#">SALES</a></li>
                         <li><a href="#">SUPPORT</a></li>
                         <li><a href="#">LIVE CHAT</a></li>
@@ -104,7 +113,7 @@
                 </div>
                 <div class="fourth">
                     <h4>OTHERS</h4>
-                    <ul type="none">
+                    <ul>
                         <li><a href="#">CAREERS</a></li>
                         <li><a href="#">PRESS</a></li>
                         <li><a href="#">LICENSES</a></li>
